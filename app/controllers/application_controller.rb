@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
     @recipe = Recipe.find_by_id(params[:id])
     
     erb :edit
-    binding.pry
+    
   end
 
   patch '/recipes/:id' do
